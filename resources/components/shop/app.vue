@@ -1,6 +1,7 @@
 <template> 
     <div id="app" class="container">
-        <login/>
+        
+        <login v-show="!bLogged"/>
     </div>
 </template>
 
@@ -14,6 +15,11 @@ import login from './login.vue';
         },
         methods: {
             
+        },
+        data() {
+            return {
+                bLogged : true
+            }
         }
     }
 </script>

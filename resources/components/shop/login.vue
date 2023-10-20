@@ -13,8 +13,8 @@
         
         <div class="social-media-div">
             <span class="visit">Visit us on: </span>
-            <a v-bind:href="sFbLink"><img class="social-media fb" src="../../images/fb.png"  alt=""></a>
-            <a v-bind:href="sIgLink"><img class="social-media ig" src="../../images/ig.png" alt=""></a>
+            <a v-bind:href="sFbLink" target="_blank"><img class="social-media fb" src="../../images/fb.png"  alt=""></a>
+            <a v-bind:href="sIgLink" target="_blank"><img class="social-media ig" src="../../images/ig.png" alt=""></a>
         </div>
         
     </div>
@@ -34,15 +34,21 @@
                 let oSideLoginDiv =  (document).getElementById('side-div-login');
                 if (oSideLoginDiv.classList.contains('slide-right') === false && oSideLoginDiv.classList.contains('slide-left') === false) {
                     oSideLoginDiv.classList.toggle('slide-right');
-                    this.sideBtnHtml = 'Close';
+                    setTimeout(() => {
+                        this.sideBtnHtml = 'Close';
+                    }, 350)
                 } else if (oSideLoginDiv.classList.contains('slide-right') === true) {
                     oSideLoginDiv.classList.toggle('slide-right');
                     oSideLoginDiv.classList.toggle('slide-left');
-                    this.sideBtnHtml = 'Login';
+                    setTimeout(() => {
+                        this.sideBtnHtml = 'Login';
+                    }, 350)
                 } else if (oSideLoginDiv.classList.contains('slide-left') === true){
                     oSideLoginDiv.classList.toggle('slide-right');
                     oSideLoginDiv.classList.toggle('slide-left');
-                    this.sideBtnHtml = 'Close';
+                    setTimeout(() => {
+                        this.sideBtnHtml = 'Close';
+                    }, 350)
                 }
             }
         }

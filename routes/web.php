@@ -17,7 +17,3 @@ Route::middleware(['ip.restriction'])->group(function () {
         return view('admin/admin');
     }); 
 });
-
-Route::get('/', function () {
-    return view('shop/shop');
-});

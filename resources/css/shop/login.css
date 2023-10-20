@@ -27,6 +27,20 @@
     right: -60px;
     top: 15px;
     cursor:pointer;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    color: aliceblue;
+    background-color: #b47e7e;
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border-color: #898987;
+    border-style: solid;
+}
+
+.close-side-div-btn:active {
+    border-color: #898987;
+    border-style: solid;
 }
 
 .open-side-div-button {
@@ -135,18 +149,19 @@
 .visit {
     position: absolute;
     top: 17%;
-    left: 12%;
+    left: 13%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 650;
 }
 
 .fb {
     position: absolute;
-    left: 50%;
+    left: 53%;
     top: 5%
 }
 
 .ig {
     position: absolute;
-    left: 67%;
+    left: 70%;
     top: 5%
 }

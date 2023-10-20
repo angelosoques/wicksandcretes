@@ -9,6 +9,6 @@ Route::middleware(['ip.restriction'])->group(function () {
     });
 });
 
-Route::get('/login', function () {
-    return view('shop/login');
+Route::get('/shop', function () {
+    return view('shop/shop');
 }); 
