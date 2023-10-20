@@ -1,0 +1,152 @@
+.side-div-login {
+    /* border: solid rgba(71, 48, 48, 0.4);
+    border-width: 0 2px 0 0; */
+    margin: auto;
+    max-width: 200px;
+    min-width: 200px;
+    height: 250vh;
+    max-height: 200vh;
+    padding: 50px;
+    background: rgba(180,126,126,255);
+    /* background: rgba(137,137,135,255); */
+    /* box-shadow: inset 0 0 40px rgba(71, 48, 48, 0.8); */
+    z-index: 10;
+    position: absolute;
+    top:0px;
+    left:-300px;
+}
+
+.side-div-login-text {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 20px;
+}
+
+.close-side-div-btn {
+    position: absolute;
+    z-index: 11;
+    right: -60px;
+    top: 15px;
+    cursor:pointer;
+}
+
+.open-side-div-button {
+    position: absolute;
+    z-index: 1;
+}
+
+.slide-right {
+    left:0px;
+    -webkit-animation: left-to-right 0.5s linear forwards;
+    animation: left-to-right 0.5s linear forwards;
+}
+
+.slide-left {
+    left:-300px;
+    -webkit-animation: right-to-left 0.5s linear forwards;
+    animation: right-to-left 0.5s linear forwards;
+}
+
+@-webkit-keyframes left-to-right{
+    from{left:-300px}
+    to{left:0px}
+}
+@-webkit-keyframes right-to-left{
+    from{left:0px}
+    to{left:-300px}
+}
+
+@keyframes left-to-right{
+    from{left:-300px}
+    to{left:0}
+}
+@keyframes right-to-left{
+    from{left:0}
+    to{left:-300px}
+}
+
+.side-div-login .logo-circle {
+    position: absolute;
+    top: 1%;
+    left: 14%;
+    /* box-shadow: 5px 0 rgba(66, 63, 64, 0.1); */
+    height : 300px;
+    width : 300px;
+}
+
+.login-input-div{
+    position:absolute;
+    top: 20%;
+    width: 220px;
+    left: 13.5%;
+    height: 60px;
+    background-color:rgba(201,166,166,255);     
+    border-radius: 20px;  
+}
+
+.login-input {
+    border: rgba(201,166,166,1) solid;
+    border-width: 2px;
+    width:220px;
+    height: 27px;
+    border-radius: 4px;
+}
+
+.email {
+    position: absolute;
+    border-bottom: 0px;
+    z-index: 12;
+}
+
+.email:focus {
+    outline: none !important;
+}
+
+.pass {
+    border-top: 0px;
+    top: 33px;
+    position: absolute;
+    z-index: 13;
+}
+
+.pass:focus {
+    outline: none !important;
+}
+
+.forgot-password {
+    position: absolute;
+    left: 48%;
+    top: 62px;
+}
+
+.social-media-div {
+    position :absolute;
+    top: 43%;
+    height: 100px;
+    max-height: 100px;
+    width: 220px;
+    left: 13%;
+}
+
+.social-media {
+    height: 30px;
+    width: 30px;
+}
+
+.visit {
+    position: absolute;
+    top: 17%;
+    left: 12%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fb {
+    position: absolute;
+    left: 50%;
+    top: 5%
+}
+
+.ig {
+    position: absolute;
+    left: 67%;
+    top: 5%
+}

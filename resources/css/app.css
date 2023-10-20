@@ -1,0 +1,23 @@
+body {
+    background-color: #f0efe6;
+    border: black;
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+
+.center-div-container {
+    border: rgba(137, 137, 135, 0.4) 1px solid;
+    border-radius: 10px;
+    margin: auto;
+    max-width: 300px;
+    width: 50%;
+    margin-top: 20%;
+    padding: 30px;
+    background: rgba(218, 216, 210, 0.8);
+    box-shadow: 5px 5px rgba(66, 63, 64, 0.5);
+}
+
+.logo-circle {
+    border-radius: 300px;
+    border: 5px rgba(180,126,126,255) solid;
+}
